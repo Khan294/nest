@@ -16,7 +16,7 @@ export class CompanyService {
   }
 
   findAll() {
-    return this.companyModel.find().populate('owner').exec();
+    return this.companyModel.find().skip(0).limit(10).populate('owner').exec();
   }
 
   findOne(id: number) {
