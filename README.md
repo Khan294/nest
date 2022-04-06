@@ -1,2 +1,2 @@
 For new resource
-	nest g resource
+	nest g resource <name>
